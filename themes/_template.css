@@ -1,11 +1,11 @@
-@import './_base.css';
+@import "./_base.css";
 
 .ns-root,
 .ns-modal {
-  // :root content here
+  /* :root content here */
 }
 
 .ns-dark,
 .ns-modal .ns-dark {
-  // .dark content here
+  /* .dark content here */
 }

@@ -97,3 +97,72 @@ Included theme files:
 @tailwind components;
 @tailwind utilities;
 ```
+
+# Themes
+
+The included themes (CSS variable preset files) are taken from [Theming - shadcn-vue](https://www.shadcn-vue.com/themes.html) with a border radius of 0.5.  
+Minor modifications include adding base definitions for `Page` and `ActionBar` (see `themes/_base.css`).
+
+You can create your own theme by using one of the provided themes as a template (see `themes/zinc.css`).  
+Alternatively, use `themes/_template.css` if you want to copy and paste a different variant from [shadcn-vue](https://www.shadcn-vue.com/themes.html).
+
+<details>
+  <summary>Example template</summary>
+
+```css
+@import "@amj7/nativescript-tailwind-shadcn-vue-colors/themes/_base.css";
+
+.ns-root,
+.ns-modal {
+  /* :root content here */
+}
+
+.ns-dark,
+.ns-modal .ns-dark {
+  /* .dark content here */
+}
+```
+
+</details>
+
+# Bonus
+
+### Example usage with `@nativescript/theme-switcher`
+
+Install `theme-switcher` and/or follow [@nativescript/theme-switcher](https://github.com/NativeScript/plugins/tree/main/packages/theme-switcher) setup guide
+
+```sh
+npm install @nativescript/theme-switcher
+```
+
+Call this function in the app's `app.ts` or `main.ts` file, before the app starts.
+
+```ts
+import { initThemes } from "@nativescript/theme-switcher";
+
+initThemes({
+  default: () => import(`theme-loader!@amj7/nativescript-tailwind-shadcn-vue-colors/themes/zinc.css`),
+  green: () => import(`theme-loader!@amj7/nativescript-tailwind-shadcn-vue-colors/themes/green.css`),
+  blue: () => import(`theme-loader!@amj7/nativescript-tailwind-shadcn-vue-colors/themes/blue.css`),
+
+  // custom: () => import('theme-loader!./themes/example.css'),
+})
+```
+
+Example usage:
+
+```ts
+import { switchTheme } from "@nativescript/theme-switcher";
+
+async function onTap() {
+  const res = await action("Select theme", "Cancel", [
+    "default",
+    "green",
+    "blue",
+  ]);
+
+  if (res && res !== "Cancel") {
+    switchTheme(res);
+  }
+}
+```
