@@ -17,6 +17,6 @@ export interface NativeScriptTailwindConfig {
   plugins: any[];
 }
 
-declare function createNativeScriptTailwindConfig(): NativeScriptTailwindConfig;
+declare function createNativeScriptTailwindConfigParts(): NativeScriptTailwindConfig;
 
-export = createNativeScriptTailwindConfig;
+export = createNativeScriptTailwindConfigParts;

@@ -1,6 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 
-function createNativeScriptTailwindConfig() {
+function createNativeScriptTailwindConfigParts() {
   return {
     theme: {
       extend: {
@@ -66,4 +66,4 @@ function createNativeScriptTailwindConfig() {
   };
 }
 
-module.exports = createNativeScriptTailwindConfig;
+module.exports = createNativeScriptTailwindConfigParts;
