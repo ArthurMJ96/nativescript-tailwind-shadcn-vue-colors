@@ -87,10 +87,13 @@ module.exports = {
 </details>
 
 ### Add theme to your `app.css`
+
+Included theme files:
+`zinc` ,`rose` ,`blue` ,`green` ,`orange` ,`red` ,`slate` ,`stone` ,`gray` ,`neutral` ,`yellow` ,`violet`
+
 ```css
-@import '@amj7/nativescript-tailwind-shadcn-vue-colors/themes/zinc.css'; /* THIS */
+@import "@amj7/nativescript-tailwind-shadcn-vue-colors/themes/zinc.css"; /* THIS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 ```
