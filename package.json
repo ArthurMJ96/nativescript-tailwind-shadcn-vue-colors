@@ -1,6 +1,6 @@
 {
   "name": "@amj7/nativescript-tailwind-shadcn-vue-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NativeScript Tailwind CSS plugin that provides shadcn-vue color classes and css variables",
   "main": "index.js",
   "files": [
@@ -16,9 +16,13 @@
     "preset",
     "shadcn-vue"
   ],
-  "author": "ArthurMJ96",
   "license": "MIT",
   "peerDependencies": {
     "tailwindcss": "^3.0.0"
+  },
+  "author": "ArthurMJ96",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArthurMJ96/nativescript-tailwind-shadcn-vue-colors.git"
   }
 }
