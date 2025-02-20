@@ -1,0 +1,11 @@
+@import './_base.css';
+
+.ns-root,
+.ns-modal {
+  //
+}
+
+.ns-dark,
+.ns-modal .ns-dark {
+  //
+}

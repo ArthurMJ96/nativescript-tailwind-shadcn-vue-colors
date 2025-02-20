@@ -20,17 +20,19 @@ addVariant("android", ".ns-android &"); // android:border-none
 addVariant("tablet", ".ns-tablet &"); // tablet:w-48
 ```
 
-# Install
+# Usage
+
+### Install
 
 ```
 npm i @amj7/nativescript-tailwind-shadcn-vue-colors
 ```
 
-### Example usage
+### Setup in `tailwind.config.js`
 
-#### For fast drop-in:
-
-In your `tailwind.config.js`:
+<details>
+  <summary>For fast drop-in:</summary>
+  In your `tailwind.config.js`:
 
 ```js
 const { theme, plugins } =
@@ -48,8 +50,10 @@ module.exports = {
 };
 ```
 
-#### Mix in with your stuff:
+</details>
 
+<details>
+  <summary>Mix in with your stuff:</summary>
 In your `tailwind.config.js`:
 
 ```js
@@ -78,4 +82,15 @@ module.exports = {
     preflight: false,
   },
 };
+```
+
+</details>
+
+### Add theme to your `app.css`
+```css
+@import '@amj7/nativescript-tailwind-shadcn-vue-colors/themes/zinc.css'; /* THIS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 ```

@@ -4,7 +4,8 @@
   "description": "NativeScript Tailwind CSS plugin that provides shadcn-vue color classes and css variables",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "themes"
   ],
   "keywords": [
     "nativescript",

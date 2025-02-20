@@ -1,0 +1,11 @@
+* {
+  @apply border-border;
+}
+
+Page {
+  @apply bg-background text-foreground;
+}
+
+ActionBar {
+  @apply border-b bg-background text-foreground;
+}
