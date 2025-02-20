@@ -2,10 +2,10 @@
 
 .ns-root,
 .ns-modal {
-  //
+  // :root content here
 }
 
 .ns-dark,
 .ns-modal .ns-dark {
-  //
+  // .dark content here
 }
