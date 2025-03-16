@@ -32,8 +32,8 @@
   --radius: 0.5rem;
 }
 
-.ns-dark,
-.ns-modal .ns-dark {
+.ns-root.ns-dark,
+.ns-modal.ns-dark {
   --background: 20 14.3% 4.1%;
   --foreground: 0 0% 95%;
 

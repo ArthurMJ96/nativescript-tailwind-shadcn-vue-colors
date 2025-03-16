@@ -1,6 +1,6 @@
 {
   "name": "@amj7/nativescript-tailwind-shadcn-vue-colors",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NativeScript Tailwind CSS plugin that provides shadcn-vue color classes and css variables",
   "main": "index.js",
   "files": [
@@ -8,6 +8,7 @@
     "themes"
   ],
   "keywords": [
+    "NativeScript",
     "nativescript",
     "tailwind",
     "tailwindcss",

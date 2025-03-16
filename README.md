@@ -117,8 +117,8 @@ Alternatively, use `themes/_template.css` if you want to copy and paste a differ
   /* :root content here */
 }
 
-.ns-dark,
-.ns-modal .ns-dark {
+.ns-root.ns-dark,
+.ns-modal.ns-dark {
   /* .dark content here */
 }
 ```
